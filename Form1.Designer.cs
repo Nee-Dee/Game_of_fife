@@ -32,25 +32,25 @@ namespace Game_of_fife
             this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown_density = new System.Windows.Forms.NumericUpDown();
+            this.checkBox_grid = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button_rules = new System.Windows.Forms.Button();
+            this.button_info = new System.Windows.Forms.Button();
+            this.button_stop = new System.Windows.Forms.Button();
+            this.button_start = new System.Windows.Forms.Button();
+            this.checkBox_myself = new System.Windows.Forms.CheckBox();
+            this.checkBox_random = new System.Windows.Forms.CheckBox();
+            this.numericUpDown_size = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_density)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_size)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,17 +65,17 @@ namespace Game_of_fife
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.label3);
-            this.splitContainer1.Panel1.Controls.Add(this.numericUpDown2);
-            this.splitContainer1.Panel1.Controls.Add(this.checkBox3);
+            this.splitContainer1.Panel1.Controls.Add(this.numericUpDown_density);
+            this.splitContainer1.Panel1.Controls.Add(this.checkBox_grid);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Controls.Add(this.button4);
-            this.splitContainer1.Panel1.Controls.Add(this.button3);
-            this.splitContainer1.Panel1.Controls.Add(this.button2);
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
-            this.splitContainer1.Panel1.Controls.Add(this.checkBox2);
-            this.splitContainer1.Panel1.Controls.Add(this.checkBox1);
-            this.splitContainer1.Panel1.Controls.Add(this.numericUpDown1);
+            this.splitContainer1.Panel1.Controls.Add(this.button_rules);
+            this.splitContainer1.Panel1.Controls.Add(this.button_info);
+            this.splitContainer1.Panel1.Controls.Add(this.button_stop);
+            this.splitContainer1.Panel1.Controls.Add(this.button_start);
+            this.splitContainer1.Panel1.Controls.Add(this.checkBox_myself);
+            this.splitContainer1.Panel1.Controls.Add(this.checkBox_random);
+            this.splitContainer1.Panel1.Controls.Add(this.numericUpDown_size);
             // 
             // splitContainer1.Panel2
             // 
@@ -92,39 +92,40 @@ namespace Game_of_fife
             this.label3.TabIndex = 11;
             this.label3.Text = "Плотность населения";
             // 
-            // numericUpDown2
+            // numericUpDown_density
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(21, 124);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDown_density.Location = new System.Drawing.Point(21, 124);
+            this.numericUpDown_density.Maximum = new decimal(new int[] {
             30,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numericUpDown_density.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(71, 23);
-            this.numericUpDown2.TabIndex = 10;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericUpDown_density.Name = "numericUpDown_density";
+            this.numericUpDown_density.Size = new System.Drawing.Size(71, 23);
+            this.numericUpDown_density.TabIndex = 10;
+            this.numericUpDown_density.Value = new decimal(new int[] {
             27,
             0,
             0,
             0});
             // 
-            // checkBox3
+            // checkBox_grid
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Checked = true;
-            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(11, 257);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(57, 19);
-            this.checkBox3.TabIndex = 9;
-            this.checkBox3.Text = "Сетка";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox_grid.AutoSize = true;
+            this.checkBox_grid.Checked = true;
+            this.checkBox_grid.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_grid.Location = new System.Drawing.Point(11, 257);
+            this.checkBox_grid.Name = "checkBox_grid";
+            this.checkBox_grid.Size = new System.Drawing.Size(57, 19);
+            this.checkBox_grid.TabIndex = 9;
+            this.checkBox_grid.Text = "Сетка";
+            this.checkBox_grid.UseVisualStyleBackColor = true;
+            this.checkBox_grid.CheckedChanged += new System.EventHandler(this.checkBox_grid_CheckedChanged);
             // 
             // label2
             // 
@@ -143,88 +144,88 @@ namespace Game_of_fife
             this.label1.TabIndex = 7;
             this.label1.Text = "Размер клетки";
             // 
-            // button4
+            // button_rules
             // 
-            this.button4.Location = new System.Drawing.Point(9, 486);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 35);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Правила";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button_rules.Location = new System.Drawing.Point(9, 486);
+            this.button_rules.Name = "button_rules";
+            this.button_rules.Size = new System.Drawing.Size(99, 35);
+            this.button_rules.TabIndex = 6;
+            this.button_rules.Text = "Правила";
+            this.button_rules.UseVisualStyleBackColor = true;
+            this.button_rules.Click += new System.EventHandler(this.button_rules_Click);
             // 
-            // button3
+            // button_info
             // 
-            this.button3.Location = new System.Drawing.Point(9, 445);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 35);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "О программе";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button_info.Location = new System.Drawing.Point(9, 445);
+            this.button_info.Name = "button_info";
+            this.button_info.Size = new System.Drawing.Size(99, 35);
+            this.button_info.TabIndex = 5;
+            this.button_info.Text = "О программе";
+            this.button_info.UseVisualStyleBackColor = true;
+            this.button_info.Click += new System.EventHandler(this.button_info_Click);
             // 
-            // button2
+            // button_stop
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(9, 333);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 35);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Стоп";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_stop.Enabled = false;
+            this.button_stop.Location = new System.Drawing.Point(9, 333);
+            this.button_stop.Name = "button_stop";
+            this.button_stop.Size = new System.Drawing.Size(99, 35);
+            this.button_stop.TabIndex = 4;
+            this.button_stop.Text = "Стоп";
+            this.button_stop.UseVisualStyleBackColor = true;
+            this.button_stop.Click += new System.EventHandler(this.button_stop_Click);
             // 
-            // button1
+            // button_start
             // 
-            this.button1.Location = new System.Drawing.Point(9, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Старт";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_start.Location = new System.Drawing.Point(9, 292);
+            this.button_start.Name = "button_start";
+            this.button_start.Size = new System.Drawing.Size(99, 35);
+            this.button_start.TabIndex = 3;
+            this.button_start.Text = "Старт";
+            this.button_start.UseVisualStyleBackColor = true;
+            this.button_start.Click += new System.EventHandler(this.button_start_Click);
             // 
-            // checkBox2
+            // checkBox_myself
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(11, 221);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(71, 19);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Самому";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.checkBox_myself.AutoSize = true;
+            this.checkBox_myself.Location = new System.Drawing.Point(11, 221);
+            this.checkBox_myself.Name = "checkBox_myself";
+            this.checkBox_myself.Size = new System.Drawing.Size(71, 19);
+            this.checkBox_myself.TabIndex = 2;
+            this.checkBox_myself.Text = "Самому";
+            this.checkBox_myself.UseVisualStyleBackColor = true;
+            this.checkBox_myself.CheckedChanged += new System.EventHandler(this.checkBox_myself_CheckedChanged);
             // 
-            // checkBox1
+            // checkBox_random
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(11, 196);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(81, 19);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Случайно";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox_random.AutoSize = true;
+            this.checkBox_random.Checked = true;
+            this.checkBox_random.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_random.Location = new System.Drawing.Point(11, 196);
+            this.checkBox_random.Name = "checkBox_random";
+            this.checkBox_random.Size = new System.Drawing.Size(81, 19);
+            this.checkBox_random.TabIndex = 1;
+            this.checkBox_random.Text = "Случайно";
+            this.checkBox_random.UseVisualStyleBackColor = true;
+            this.checkBox_random.CheckedChanged += new System.EventHandler(this.checkBox_random_CheckedChanged);
             // 
-            // numericUpDown1
+            // numericUpDown_size
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(21, 48);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numericUpDown_size.Location = new System.Drawing.Point(21, 48);
+            this.numericUpDown_size.Minimum = new decimal(new int[] {
             2,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(71, 23);
-            this.numericUpDown1.TabIndex = 0;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDown_size.Name = "numericUpDown_size";
+            this.numericUpDown_size.Size = new System.Drawing.Size(71, 23);
+            this.numericUpDown_size.TabIndex = 0;
+            this.numericUpDown_size.Value = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.numericUpDown_size.ValueChanged += new System.EventHandler(this.numericUpDown_size_ValueChanged);
             // 
             // pictureBox1
             // 
@@ -259,8 +260,8 @@ namespace Game_of_fife
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_density)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_size)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -269,19 +270,19 @@ namespace Game_of_fife
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button button_stop;
+        private System.Windows.Forms.Button button_start;
+        private System.Windows.Forms.CheckBox checkBox_myself;
+        private System.Windows.Forms.CheckBox checkBox_random;
+        private System.Windows.Forms.NumericUpDown numericUpDown_size;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_info;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_rules;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.CheckBox checkBox_grid;
+        private System.Windows.Forms.NumericUpDown numericUpDown_density;
         private System.Windows.Forms.Label label3;
     }
 }
